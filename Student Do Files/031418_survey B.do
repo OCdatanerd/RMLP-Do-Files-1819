@@ -1,17 +1,12 @@
 
 ** Reverse score items
 
-gen rpgh5= 4-pgh5
+replace pgh5= 4-pgh5
 
 forv i = 6/8 {
-	gen rsrq`i' = 4- srq`i'
+	replace srq`i' = 4- srq`i'
 	}
 
-order rsrq6-rsrq8, after(srq8)
-order rpgh5, after(pgh5)
-drop (srq6-srq8)
-drop pgh5
-rename r* *
 
 ** Remove Duplicates
 gen lstu_id= lower(stu_id)

@@ -6,7 +6,7 @@ forv i = 10/16 {
 	}
 
 forv i = 10/16 {
-	replace bis`i'= 7-bif`i'
+	replace bis`i'= 7-bis`i'
 	}
 	
 forv i = 1/3 {
