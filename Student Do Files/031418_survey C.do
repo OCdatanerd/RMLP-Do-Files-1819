@@ -1,17 +1,12 @@
 
 
 ** Reverse Code Value
-gen rpgh5= 4-pgh5
+replace pgh5= 4-pgh5
 
 forv i = 6/8 {
-	gen rqsr`i' = 4- qsr`i'
+	replace qsr`i' = 4- qsr`i'
 	}
 
-order rqsr6-rqsr8, after(qsr8)
-order rpgh5, after(pgh5)
-drop (qsr6-qsr8)
-drop pgh5
-rename r* *
 
 ** Remove Duplicates
 gen lstu_id= lower(stu_id)
@@ -27,8 +22,7 @@ rename (psq1-pgh7)=_post
 
 
 ** Merge
-use "C:\Users\drochman\Dropbox (OCDE)\Job Files\RMLP\Data Files\SY 2017-18\Fall\Student Merge\031418_Survey C_premerge.dta"
-merge 1:1 stu_id teach_id using "C:\Users\drochman\Dropbox (OCDE)\Job Files\RMLP\Data Files\SY 2017-18\Fall\Student Merge\031418_Survey C_postmerge.dta"
+
 keep if _merge==3
 
 ** Create Scales

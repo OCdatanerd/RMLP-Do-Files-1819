@@ -43,8 +43,7 @@ duplicates drop stu_id, force
 
 
 ** Merge
-use "C:\Users\drochman\Dropbox (OCDE)\Job Files\RMLP\Data Files\SY 2017-18\Fall\Student Merge\031418_Survey A_premerge.dta"
-merge 1:1 stu_id teach_id using "C:\Users\drochman\Dropbox (OCDE)\Job Files\RMLP\Data Files\SY 2017-18\Fall\Student Merge\031418_Survey A_postmerge.dta"
+
 keep if _merge==3
 
 ** Scales

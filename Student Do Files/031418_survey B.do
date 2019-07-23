@@ -22,8 +22,7 @@ rename (sam1-pgh7)=_post
 
 
 ** Merge
-use "C:\Users\drochman\Dropbox (OCDE)\Job Files\RMLP\Data Files\SY 2017-18\Fall\Student Merge\031418_Survey B_premerge.dta"
-merge 1:1 stu_id teach_id using "C:\Users\drochman\Dropbox (OCDE)\Job Files\RMLP\Data Files\SY 2017-18\Fall\Student Merge\031418_Survey B_postmerge.dta"
+
 keep if _merge==3
 
 ** Make Scales

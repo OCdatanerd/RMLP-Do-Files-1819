@@ -1,20 +1,14 @@
 
 ** Reverse score items
 
-gen rpgh5= 4-pgh5
+replace pgh5= 4-pgh5
 
 forv i = 6/8 {
-	gen rsrq`i' = 4- srq`i'
+	replace srq`i' = 4- srq`i'
 	}
+
+
 ** Remove Duplicates
-
-order rsrq6-rsrq8, after(srq8)
-order rpgh5, after(pgh5)
-drop (srq6-srq8)
-drop pgh5
-rename r* *
-
-** 
 gen lstu_id= lower(stu_id)
 order lstu_id, after(stu_id)
 drop stu_id
@@ -27,8 +21,7 @@ rename (sam1-pgh7)=_pre
 rename (sam1-pgh7)=_post
 
 ** Merge
-use "C:\Users\drochman\Dropbox (OCDE)\Job Files\RMLP\Data Files\SY 2017-18\Fall\Student Merge\031418_Survey BE_premerge.dta"
-merge 1:1 stu_id teach_id using "C:\Users\drochman\Dropbox (OCDE)\Job Files\RMLP\Data Files\SY 2017-18\Fall\Student Merge\031418_Survey BE_postmerge.dta"
+
 keep if _merge==3
 
 
