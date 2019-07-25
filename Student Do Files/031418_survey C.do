@@ -1,10 +1,10 @@
 
 
 ** Reverse Code Value
-replace pgh5= 4-pgh5
+replace pgh5= 6-pgh5
 
 forv i = 6/8 {
-	replace qsr`i' = 4- qsr`i'
+	replace qsr`i' = 5- qsr`i'
 	}
 
 

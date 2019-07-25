@@ -6,26 +6,26 @@ replace pss4= 4-pss4
 replace pss5= 4-pss5
 replace pss7= 4-pss7
 replace pss8= 4-pss8
-replace asri1= 4-asri1
-replace asri2= 4-asri2
+replace asri1= 6-asri1
+replace asri2= 6-asri2
 forv i 5/8 {
-	replace asri`i'= 4-asri`i'
+	replace asri`i'= 6-asri`i'
 	}
 
 forv i 12/16 {
-	replace asri`i'= 4-asri`i'
+	replace asri`i'= 6-asri`i'
 	}
 	
 forv i 12/16 {
-	replace asri`i'= 4-asri`i'
+	replace asri`i'= 6-asri`i'
 	}
 	
-replace asri18= 4-asri18
-replace asri19= 4-asri19
-replace asri21= 4-asri21
-replace asri34= 4-asri34
-replace asri35= 4-asri35
-replace pgh5= 4-pgh5
+replace asri18= 6-asri18
+replace asri19= 6-asri19
+replace asri21= 6-asri21
+replace asri34= 6-asri34
+replace asri35= 6-asri35
+replace pgh5= 6-pgh5
 
 ** Name data
 rename(pss1-pgh7)=_pre

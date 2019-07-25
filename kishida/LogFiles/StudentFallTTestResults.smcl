@@ -1,0 +1,259 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\s.KIshida\Dropbox (OCDE)\RMLP\Data Files\SY 2018-19\RMLP Do Files 1819\kishida\LogFiles\StudentFallTTestResults.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}24 Jul 2019, 14:06:13
+{txt}
+{com}. 
+. ttest pss_post==pss_pre if survey=="A"
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+pss_post {c |}{res}{col 12}    368{col 22} 19.79348{col 34} .3464485{col 46} 6.646034{col 58} 19.11221{col 70} 20.47475
+ {txt}pss_pre {c |}{res}{col 12}    368{col 22} 20.17391{col 34} .3400479{col 46} 6.523249{col 58} 19.50523{col 70}  20.8426
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    368{col 22}-.3804348{col 34} .2991312{col 46} 5.738331{col 58} -.968661{col 70} .2077914
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}pss_post{txt} - {res}pss_pre{txt})                        t = {res} -1.2718
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}     367
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}0.1021         {txt}Pr(|T| > |t|) = {res}0.2042          {txt}Pr(T > t) = {res}0.8979
+{txt}
+{com}. ttest asri_post==asri_pre if survey=="A"
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+asri_p~t {c |}{res}{col 12}    368{col 22} 2.149079{col 34} .0153243{col 46} .2939705{col 58} 2.118945{col 70} 2.179213
+{txt}asri_pre {c |}{res}{col 12}    368{col 22} 2.181839{col 34} .0151875{col 46} .2913474{col 58} 2.151973{col 70} 2.211704
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    368{col 22}-.0327597{col 34} .0143159{col 46}  .274627{col 58}-.0609112{col 70}-.0046081
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}asri_post{txt} - {res}asri_pre{txt})                      t = {res} -2.2883
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}     367
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}0.0113         {txt}Pr(|T| > |t|) = {res}0.0227          {txt}Pr(T > t) = {res}0.9887
+{txt}
+{com}. ttest pgh_post==pgh_pre if survey=="A"
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+pgh_post {c |}{res}{col 12}    368{col 22} 23.30978{col 34} .2213417{col 46}  4.24607{col 58} 22.87453{col 70} 23.74504
+ {txt}pgh_pre {c |}{res}{col 12}    368{col 22} 23.23641{col 34} .2268553{col 46} 4.351839{col 58} 22.79031{col 70} 23.68251
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    368{col 22} .0733696{col 34} .1603602{col 46} 3.076242{col 58}-.2419706{col 70} .3887097
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}pgh_post{txt} - {res}pgh_pre{txt})                        t = {res}  0.4575
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}     367
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}0.6762         {txt}Pr(|T| > |t|) = {res}0.6476          {txt}Pr(T > t) = {res}0.3238
+{txt}
+{com}. 
+. ttest sam_post==sam_pre if survey=="B"
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+sam_post {c |}{res}{col 12}    179{col 22}  1.37227{col 34}  .051106{col 46} .6837523{col 58} 1.271418{col 70} 1.473122
+ {txt}sam_pre {c |}{res}{col 12}    179{col 22} 1.397156{col 34} .0527009{col 46} .7050902{col 58} 1.293157{col 70} 1.501155
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    179{col 22}-.0248857{col 34} .0394289{col 46} .5275222{col 58}-.1026939{col 70} .0529224
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}sam_post{txt} - {res}sam_pre{txt})                        t = {res} -0.6312
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}     178
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}0.2644         {txt}Pr(|T| > |t|) = {res}0.5287          {txt}Pr(T > t) = {res}0.7356
+{txt}
+{com}. ttest srq_post==srq_pre if survey=="B"
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+srq_post {c |}{res}{col 12}    179{col 22} 2.773098{col 34} .0355536{col 46} .4756747{col 58} 2.702938{col 70} 2.843259
+ {txt}srq_pre {c |}{res}{col 12}    179{col 22} 2.826816{col 34} .0365558{col 46} .4890832{col 58} 2.754677{col 70} 2.898954
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    179{col 22}-.0537172{col 34} .0278874{col 46} .3731083{col 58}-.1087498{col 70} .0013153
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}srq_post{txt} - {res}srq_pre{txt})                        t = {res} -1.9262
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}     178
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}0.0278         {txt}Pr(|T| > |t|) = {res}0.0557          {txt}Pr(T > t) = {res}0.9722
+{txt}
+{com}. ttest pgh_post==pgh_pre if survey=="B"
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+pgh_post {c |}{res}{col 12}    179{col 22} 24.06145{col 34} .3252365{col 46} 4.351368{col 58} 23.41964{col 70} 24.70327
+ {txt}pgh_pre {c |}{res}{col 12}    179{col 22}  24.4581{col 34}   .30779{col 46} 4.117949{col 58} 23.85071{col 70} 25.06549
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    179{col 22} -.396648{col 34}  .252465{col 46} 3.377751{col 58}-.8948576{col 70} .1015615
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}pgh_post{txt} - {res}pgh_pre{txt})                        t = {res} -1.5711
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}     178
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}0.0590         {txt}Pr(|T| > |t|) = {res}0.1179          {txt}Pr(T > t) = {res}0.9410
+{txt}
+{com}. 
+. ttest sam_post==sam_pre if survey=="BE"
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+sam_post {c |}{res}{col 12}      7{col 22} 1.883117{col 34} .2993593{col 46} .7920304{col 58} 1.150611{col 70} 2.615623
+ {txt}sam_pre {c |}{res}{col 12}      7{col 22} 1.766234{col 34} .2783385{col 46} .7364144{col 58} 1.085164{col 70} 2.447304
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}      7{col 22} .1168831{col 34} .1679966{col 46} .4444772{col 58}-.2941898{col 70}  .527956
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}sam_post{txt} - {res}sam_pre{txt})                        t = {res}  0.6957
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}       6
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}0.7437         {txt}Pr(|T| > |t|) = {res}0.5126          {txt}Pr(T > t) = {res}0.2563
+{txt}
+{com}. ttest srq_post==srq_pre if survey=="BE"
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+srq_post {c |}{res}{col 12}      7{col 22} 3.098901{col 34}  .206757{col 46} .5470276{col 58} 2.592985{col 70} 3.604817
+ {txt}srq_pre {c |}{res}{col 12}      7{col 22} 3.120879{col 34} .1276808{col 46} .3378115{col 58} 2.808456{col 70} 3.433303
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}      7{col 22} -.021978{col 34} .1498701{col 46} .3965191{col 58}-.3886971{col 70}  .344741
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}srq_post{txt} - {res}srq_pre{txt})                        t = {res} -0.1466
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}       6
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}0.4441         {txt}Pr(|T| > |t|) = {res}0.8882          {txt}Pr(T > t) = {res}0.5559
+{txt}
+{com}. ttest pgh_post==pgh_pre if survey=="BE"
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+pgh_post {c |}{res}{col 12}      7{col 22}       27{col 34} 1.661898{col 46} 4.396969{col 58} 22.93348{col 70} 31.06652
+ {txt}pgh_pre {c |}{res}{col 12}      7{col 22}       27{col 34} 1.543033{col 46} 4.082483{col 58} 23.22433{col 70} 30.77567
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}      7{col 22}        0{col 34} .8164966{col 46} 2.160247{col 58}-1.997895{col 70} 1.997895
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}pgh_post{txt} - {res}pgh_pre{txt})                        t = {res}  0.0000
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}       6
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}0.5000         {txt}Pr(|T| > |t|) = {res}1.0000          {txt}Pr(T > t) = {res}0.5000
+{txt}
+{com}. 
+. ttest psq_post==psq_pre if survey=="C"
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+psq_post {c |}{res}{col 12}     20{col 22}    37.25{col 34} 2.475007{col 46} 11.06857{col 58} 32.06975{col 70} 42.43025
+ {txt}psq_pre {c |}{res}{col 12}     20{col 22}    38.45{col 34} 2.663076{col 46} 11.90964{col 58} 32.87612{col 70} 44.02388
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}     20{col 22}     -1.2{col 34} 1.400376{col 46} 6.262671{col 58} -4.13102{col 70}  1.73102
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}psq_post{txt} - {res}psq_pre{txt})                        t = {res} -0.8569
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      19
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}0.2011         {txt}Pr(|T| > |t|) = {res}0.4022          {txt}Pr(T > t) = {res}0.7989
+{txt}
+{com}. ttest srq_post==srq_pre if survey=="C"
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+srq_post {c |}{res}{col 12}     20{col 22} 2.861538{col 34} .1047903{col 46} .4686364{col 58}  2.64221{col 70} 3.080867
+ {txt}srq_pre {c |}{res}{col 12}     20{col 22} 2.769231{col 34} .1185136{col 46} .5300089{col 58} 2.521179{col 70} 3.017283
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}     20{col 22} .0923077{col 34} .0770444{col 46} .3445532{col 58}-.0689482{col 70} .2535635
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}srq_post{txt} - {res}srq_pre{txt})                        t = {res}  1.1981
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      19
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}0.8772         {txt}Pr(|T| > |t|) = {res}0.2456          {txt}Pr(T > t) = {res}0.1228
+{txt}
+{com}. ttest pgh_post==pgh_pre if survey=="C"
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+pgh_post {c |}{res}{col 12}     20{col 22}    27.85{col 34} .9659329{col 46} 4.319783{col 58} 25.82828{col 70} 29.87172
+ {txt}pgh_pre {c |}{res}{col 12}     20{col 22}     27.7{col 34}  .965456{col 46}  4.31765{col 58} 25.67928{col 70} 29.72072
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}     20{col 22}      .15{col 34} .7300865{col 46} 3.265046{col 58}-1.378089{col 70} 1.678089
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}pgh_post{txt} - {res}pgh_pre{txt})                        t = {res}  0.2055
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      19
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}0.5803         {txt}Pr(|T| > |t|) = {res}0.8394          {txt}Pr(T > t) = {res}0.4197
+{txt}
+{com}. 
+. ttest psq_post==psq_pre if survey=="D"
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+psq_post {c |}{res}{col 12}     50{col 22}    35.92{col 34} 1.450078{col 46}  10.2536{col 58} 33.00596{col 70} 38.83404
+ {txt}psq_pre {c |}{res}{col 12}     50{col 22}    38.18{col 34} 1.485629{col 46} 10.50498{col 58} 35.19452{col 70} 41.16548
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}     50{col 22}    -2.26{col 34} .9892524{col 46} 6.995071{col 58}-4.247977{col 70}-.2720228
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}psq_post{txt} - {res}psq_pre{txt})                        t = {res} -2.2846
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      49
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}0.0134         {txt}Pr(|T| > |t|) = {res}0.0267          {txt}Pr(T > t) = {res}0.9866
+{txt}
+{com}. ttest pgh_post==pgh_pre if survey=="D"
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+pgh_post {c |}{res}{col 12}     50{col 22}    26.44{col 34} .5120268{col 46} 3.620576{col 58} 25.41104{col 70} 27.46896
+ {txt}pgh_pre {c |}{res}{col 12}     50{col 22}    26.26{col 34} .5141349{col 46} 3.635483{col 58} 25.22681{col 70} 27.29319
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}     50{col 22}      .18{col 34} .4846122{col 46} 3.426726{col 58}-.7938647{col 70} 1.153865
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}pgh_post{txt} - {res}pgh_pre{txt})                        t = {res}  0.3714
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      49
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}0.6440         {txt}Pr(|T| > |t|) = {res}0.7119          {txt}Pr(T > t) = {res}0.3560
+{txt}
+{com}. 
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\s.KIshida\Dropbox (OCDE)\RMLP\Data Files\SY 2018-19\RMLP Do Files 1819\kishida\LogFiles\StudentFallTTestResults.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}24 Jul 2019, 14:06:14
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

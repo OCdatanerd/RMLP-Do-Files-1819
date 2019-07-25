@@ -1,10 +1,10 @@
 
 ** Reverse score items
 
-replace pgh5= 4-pgh5
+replace pgh5= 6-pgh5
 
 forv i = 6/8 {
-	replace srq`i' = 4- srq`i'
+	replace srq`i' = 5- srq`i'
 	}
 
 
