@@ -4,7 +4,7 @@
 replace pgh5= 6-pgh5
 
 forv i = 6/8 {
-	replace qsr`i' = 5- qsr`i'
+	replace srq`i' = 5- srq`i'
 	}
 
 

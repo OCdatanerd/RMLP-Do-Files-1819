@@ -1,3 +1,5 @@
+** Reverse Score
+replace pgh5= 6-pgh5
 
 ** Remove Duplicates
 gen lstu_id= lower(stu_id)
