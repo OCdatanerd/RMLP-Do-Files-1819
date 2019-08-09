@@ -1,16 +1,25 @@
 *Cleaning each data file************************************************************************************************************************************
 *Pretest****************************************************************************************************************************************************
-import delimited "C:\Users\s.KIshida\Dropbox (OCDE)\RMLP\Data Files\SY 2018-19\Spring\Working Folder\Teacher\Excel files\073019_teach_pre_sp19.csv", clear 
-gen period==1
-save "C:\Users\s.KIshida\Dropbox (OCDE)\RMLP\Data Files\SY 2018-19\Spring\Working Folder\Teacher\Stata files\073019_teach_pre_sp19.dta", replace
+import delimited "C:\Users\s.KIshida\Dropbox (OCDE)\RMLP\Data Files\SY 2018-19\Spring\Working Folder\Teacher Files\Teacher Surveys\073019_teach_pre_sp19.csv", clear
+gen period=1
+duplicates report teach_id
+save "C:\Users\s.KIshida\Dropbox (OCDE)\RMLP\Data Files\SY 2018-19\Spring\Working Folder\Teacher Files\Stata files\073019_teach_pre_sp19.dta", replace
 
-import delimited "C:\Users\s.KIshida\Dropbox (OCDE)\RMLP\Data Files\SY 2018-19\Spring\Working Folder\Teacher\Excel files\073019_teach_post_sp19.csv", clear 
-gen period==2
-save "C:\Users\s.KIshida\Dropbox (OCDE)\RMLP\Data Files\SY 2018-19\Spring\Working Folder\Teacher\Stata files\073019_teach_pre_post.dta", replace
+import delimited "C:\Users\s.KIshida\Dropbox (OCDE)\RMLP\Data Files\SY 2018-19\Spring\Working Folder\Teacher Files\Teacher Surveys\073019_teach_post_sp19.csv", clear
+gen period=2
+duplicates report teach_id, gen(temp)
+*there are two duplicated cases.
 
-import delimited "C:\Users\s.KIshida\Dropbox (OCDE)\RMLP\Data Files\SY 2018-19\Spring\Working Folder\Teacher\Excel files\073019_teach_post2_sp19.csv", clear 
-gen period==3
-save "C:\Users\s.KIshida\Dropbox (OCDE)\RMLP\Data Files\SY 2018-19\Spring\Working Folder\Teacher\Stata files\073019_teach_post2_sp19.dta", replace
+save "C:\Users\s.KIshida\Dropbox (OCDE)\RMLP\Data Files\SY 2018-19\Spring\Working Folder\Teacher Files\Stata files\073019_teach_post_sp19.dta", replace
+
+import delimited "C:\Users\s.KIshida\Dropbox (OCDE)\RMLP\Data Files\SY 2018-19\Spring\Working Folder\Teacher Files\Teacher Surveys\073019_teach_post2_sp19.csv", clear
+gen period=3
+save "C:\Users\s.KIshida\Dropbox (OCDE)\RMLP\Data Files\SY 2018-19\Spring\Working Folder\Teacher Files\Stata files\073019_teach_post2_sp19.dta", replace
+
+
+use "C:\Users\s.KIshida\Dropbox (OCDE)\RMLP\Data Files\SY 2018-19\Spring\Working Folder\Teacher Files\Stata files\073019_teach_pre_sp19.dta", clear
+
+
 
 
 ****************UNDER CONSTRUCTION***********************************************************************************************************************
